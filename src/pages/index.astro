@@ -1,0 +1,144 @@
+---
+import Layout from '../components/Layout.astro';
+
+---
+<Layout title="Colton Zecca's Portfolio">
+    <nav id="nav-container" class="navbar navbar-expand-sm fixed-top navbar-dark">
+        <a class="navbar-brand" href="#">Colton Zecca</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav id="nav-links" class="collapse navbar-collapse justify-content-end">
+            <a class="nav-item nav-link active" href="#link-landing">Home</a>
+            <a class="nav-item nav-link" href="#link-about">About</a>
+            <a class="nav-item nav-link" href="#link-projects">Work Experience</a>
+        </nav>
+    </nav>
+    
+    <div id="link-landing"></div>
+    <header id="landing">
+        <div id="overlay" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <img id="avatar" src="/images/portrait.jpg">                
+                <h1>Colton Zecca</h1>
+                <p>Seeking Full-Time Software Engineering Roles</p>
+                <p>Software Engineer &amp; Developer</p>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- About -->
+        <div id="link-about"></div>
+        <section id="about" class="container">
+            <h2>About</h2>
+            <div class="row">
+                <div class="col-lg">
+                    <p class="indented">
+                        Hello! I'm a recent-grad looking to further my career as a software engineer in an entry/junior level role. I received my B.S. with a dual major in CS and IT at Rensselaer Polytechnic Institute, my concentration was in AI & Data and I received a minor in Mandarin Chinese.
+                    </p>
+                    <p class="indented">
+                        I've had tons of internship experience with Java, AWS, Docker, React, RESTful APIs, and more in an agile setting on a DevOps team. In particular, I've worked in full-stack positions on cloud-based microservices, CI/CD pipelines, and robust web applications. I'm results-driven and further encouraged by the satisfaction that goes hand in hand with product development, and working on a project that will make a difference leads me to produce results that exceed expectations.
+                        <!-- If you're an aspiring developer anyways, why use a template when you already have the knowledge? -->
+                    </p>
+                </div>
+
+                <div class="col-lg">
+<pre class="json-info">
+<!-- <code>{
+    "myInfo": {
+        "hometown": "North Palm Beach, FL",
+        "age": <span id="current-age"></span>,
+        "school": "Rensselaer Polytechnic Institute",
+        "gpa": 3.78,
+        "graduation": "May 2022",
+        "status": "Recent Grad",
+        "major1": "Computer Science",
+        "major2": "Information Technology and Web Science",
+        "concentration": "Artificial Intelligence and Data",
+        "minor": "Mandarin Chinese"
+    }
+}<span class="cursor-indicator">|</span></code> -->
+</pre>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-9 col-sm-6 col-md-5">
+                    <a href="/resume.pdf" target="_blank" class="resume-btn btn btn-primary"><span class="fa fa-file-text"></span> See My Résumé</a>
+                </div>                
+            </div>
+        </section>
+        
+        <hr class="section-divider">
+
+        <!-- Projects/Work Experience -->
+        <div id="link-projects"></div>        
+        <section id="projects" class="container">
+            <h2>Work Experience</h2>
+            <p class="text-center text-dark">My full work experience can be viewed on my resume above!</p>
+
+            <div id="projects-row" class="row justify-content-center">
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <figure class="project-item">
+                        <img alt="Labor Finders Background" src="/images/laborfinders.jpg">
+                        <figcaption>
+                            <h3>Software Developer Intern</h3>
+                            <small>Labor Finders Int'l | Palm Beach Gardens, FL</small>
+                            <hr>
+                            <p>Worked from the ground up on a customer portal development project for users to view and modify information.</p>
+                            <p><strong>Technologies: </strong>C# (WCF, .NET) | SQL | ASP.NET | HTML | CSS | JavaScript</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <figure class="project-item">
+                        <img alt="Palm Beach Tech Background" src="/images/pbtech.jpg">
+                        <figcaption>
+                            <h3>Web Developer Intern</h3>
+                            <small>Palm Beach Tech | West Palm Beach, FL</small>
+                            <hr>
+                            <p>Design and develop websites for upcoming hackathons and other similar Palm Beach Tech events, in order to improve networking and provide event information.</p>
+                            <p><strong>Technologies: </strong>HTML | CSS | JavaScript | Bootstrap | WordPress</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    <figure class="project-item">
+                        <img alt="Palm Beach Code School Background" src="/images/pbcs.jpg">
+                        <figcaption>
+                            <h3>Teacher Assistant</h3>
+                            <small>Palm Beach Code School | Palm Beach Gardens, FL</small>
+                            <hr>
+                            <p>Teach HTML, CSS, JavaScript, and Photoshop, as well as answer questions and help students.</p>
+                            <p><strong>Technologies: </strong>HTML | CSS | JavaScript | Bootstrap | Photoshop</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Social Icons -->
+        <section id="social-icons" class="container">
+            <a href="mailto:colton.zecca@gmail.com" target="_blank"><span class="fa fa-envelope"></span></a>
+            <a href="https://github.com/Colton-Zecca" target="_blank"><span class="fa fa-github"></span></a>
+            <a href="http://www.linkedin.com/in/colton-zecca" target="_blank"><span class="fa fa-linkedin"></span></a>
+            <!--<a href="https://www.facebook.com/colton.zecca" target="_blank"><span class="fa fa-facebook"></span></a>-->
+            <!--<a href="https://www.instagram.com/colton_z/" target="_blank"><span class="fa fa-instagram"></span></a>-->
+        </section>
+    </main>
+
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/a6295678b8.js"></script>    
+    <script src="mainScript.js"></script>
+</Layout>
