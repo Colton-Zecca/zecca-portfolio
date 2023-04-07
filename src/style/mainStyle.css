@@ -46,7 +46,7 @@ div[id^="link-"] {
 
 /* ---------------Header--------------- */
 header#landing {
-    background: url("/public/images/header-background.jpg");
+    background: url("/images/header-background.jpg");
     background-size: cover; 
     color: #fff;
     text-align: center;

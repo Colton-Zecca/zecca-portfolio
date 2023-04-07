@@ -1,6 +1,5 @@
 ---
-// import '../style/demo-styling.css'
-import '../style/mainStyle.css'
+import '../style/mainStyle.css' // recommended way to do it is like this, instead of included in a <link> below. This way it packages it all together
 
 export interface Props {
 	title: string;
@@ -30,7 +29,6 @@ const { title } = Astro.props as Props;
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/mainStyle.css">
 </head>
 
 <body data-spy="scroll" data-target="#nav-links">
